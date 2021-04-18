@@ -1,4 +1,4 @@
-@keyframes example {
+@keyframes long-line {
     0%   {width: 0px;}
     15%  {width: 3px;}
     25%  {width: 4px;}
@@ -11,6 +11,20 @@
     95%  {width: 22px;}
     100%  {width: 25px;}
 }
+.typed-cursor {
+    animation: blink-animation 0.1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.7s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
 ::selection{
     background: rgba(255, 0, 0, 0.349);
     color: white;
@@ -23,6 +37,7 @@ nav.navbar{
     transition: all 0.3s ease;
 }
 a.nav-link{
+    display: inline;
     font-weight: 600 !important;
     color: white !important;
     letter-spacing: 1px;
@@ -48,7 +63,7 @@ a.active::after{
     background-color: crimson;    
     bottom: 5px;
     left: 9px;
-    animation-name: example;
+    animation-name: long-line;
     animation-duration: 0.3s;
 }
 a.nav-link:hover::after{
@@ -59,11 +74,14 @@ a.nav-link:hover::after{
     background-color: crimson;    
     bottom: 5px;
     left: 9px;
-    animation-name: example;
+    animation-name: long-line;
     animation-duration: 0.3s;
 }
 span.nav-logo-span{
     color: crimson;
+}
+.menu-btn{
+    border: none !important;
 }
 .navbar-brand{
     font-size: 40px !important;
@@ -132,18 +150,15 @@ span.nav-logo-span{
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
 ::-webkit-scrollbar-track {
     background-color: rgb(0, 0, 0);
-  }
+}
 ::-webkit-scrollbar-thumb {
     box-shadow: 0 0 2px rgba(128, 128, 128, 0.514); 
     background: rgba(255, 255, 255, 0.473); 
     border-radius: 25px;
     background-clip: content-box;
-  }
-  
-  /* Handle on hover */
+}
 ::-webkit-scrollbar-thumb:hover {
     background: #ffffff46;
     transition: all 0.3s ease; 
@@ -153,10 +168,10 @@ span.nav-logo-span{
     margin-bottom: 70px;
 }
 .about-container .about-title{
-        font-size: 40px;
-        color: black;
-        line-height: 50px;
-        margin-bottom: 0px;
+    font-size: 40px;
+    color: black;
+    line-height: 50px;
+    margin-bottom: 0px;
 }
 .about-container .who-am-i{
     position: relative;
@@ -246,7 +261,7 @@ span.nav-logo-span{
 .services-card:hover{
     background: rgba(255, 0, 0, 0.2);
     border: none;
-    transition: 0.3s all ease;
+    transition: 0.3s ease;
     color: white;
     cursor: grab;
 }
@@ -285,7 +300,16 @@ span.nav-logo-span{
     right: 50%;
     z-index: -1;  
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 780px) {
+    a.nav-link:hover::after{
+        left: 0% !important;
+    }
+    a.active::after{
+        left: 0% !important;
+    }
+    li.nav-item{
+        margin-bottom: 15px;
+    }
     .navbar{
         background-color: black;
     }
@@ -305,6 +329,11 @@ span.nav-logo-span{
     .home-content h5{
         font-size: 20px;
     }
+    .services-card {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
 }
 @media screen and (max-width: 320px) {
     .home-content h3{
