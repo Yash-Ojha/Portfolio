@@ -606,6 +606,11 @@ a.twitter-link:hover{
     }
 }
 @media screen and (max-width: 480px) {
+    .home-seventh-section>div{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 35px 20px;
+    }   
     .home-content h3{
         font-size: 25px;
     }
