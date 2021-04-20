@@ -609,7 +609,6 @@ a.twitter-link:hover{
     .home-seventh-section>div{
         margin-left: 5px;
         margin-right: 5px;
-        padding: 35px 20px;
     }   
     .home-content h3{
         font-size: 25px;
@@ -639,6 +638,9 @@ a.twitter-link:hover{
     }
 }
 @media screen and (max-width: 320px) {
+    .home-seventh-section>div{
+        padding: 35px 25px;
+    }   
     .social-icons a{
         line-height: 60px;
     }
