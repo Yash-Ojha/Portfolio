@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
   <script src="assets/js/jquery.js"></script>
@@ -20,7 +20,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://yash-ojha.github.io/Portfolio/">Portf<span class="nav-logo-span">olio</span></a>
+      <a class="navbar-brand" href="index.html">Portf<span class="nav-logo-span">olio</span></a>
       <button class="navbar-toggler btn p-0 menu-btn" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://yash-ojha.github.io/Portfolio/">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#services-section">Services</a>
@@ -41,7 +41,7 @@
             <a class="nav-link" aria-current="page" href="#skills-section">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#projects-section">Projects</a>
+            <a class="nav-link" aria-current="page" href="/projects/">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#contact-section">Contact</a>
@@ -219,7 +219,7 @@
       <div class="row" data-aos="zoom-in">
         <div class="col-md-6 column-1">
           <h2>Wanna Know More<br> About Me </h2>
-          <p>Download My Resume Now.<br> Contact me for further conversations!</p>
+          <p>Download My Resume Now.<br> Contact me to get your dream website ready!</p>
         </div>
         <div class="col-md-6 column-2">
           <a href="Yash-Ojha-Resume.pdf" target="_blank" class="download-cv">Download CV <i class="fa fa-download ms-1"></i></a>
@@ -234,7 +234,7 @@
           <div class="col-md-6" data-aos="fade-up-right">
             <div class="contact-content">
               <h3 class="text-dark">Get In Touch With Me</h3>
-              <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard .</p>
+              <p>Let's make your dream project come true. Ping me and get your website to run all accross the World.</p>
               <div class="my-5">
                 <a href="tel:+919033517310" class="contact-link">
                   <div class="contact-details">
@@ -267,8 +267,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-up-left">
-            <img src="assets/img/IMG_20190421_223458_226.png" alt="">
+          <div class="col-md-6">
+            <img src="assets/img/IMG_20190421_223458_226.png" data-aos="fade-up-left" alt="">
           </div>
         </div>
       </div>
@@ -290,25 +290,13 @@
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/vanila-tilt.js"></script>
 <script src="assets/js/matchHeight.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
-  integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
-  crossorigin="anonymous"></script>
-<script src="assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/jquery-mousewheel.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="text/javascript">
-  VanillaTilt.init(document.querySelectorAll(".services-card"), {
-    max: 25,
-    speed: 400,
-    gyroscope:false,
-  });
-</script>
+<script src="assets/js/script.js"></script>
 <script>
-  jQuery(function () {
-    jQuery('.services-card').matchHeight('byRow:false');
-  });
-</script>
-<script>
-  var typed = new Typed('.typing-text', {
+    var typed = new Typed('.typing-text', {
     strings: ['Web Designer', 'Web Developer', 'WordPress Developer'],
     typeSpeed: 100,
     backSpeed: 60,
@@ -316,13 +304,6 @@
     smartBackspace: true,
     backDelay: 1800,
     cursorChar: '|',
-  });
-</script>
-<script>
-  AOS.init({
-    offset: 150,
-    duration: 1200,
-    disable: 'mobile',
   });
 </script>
 </html>
