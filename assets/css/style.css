@@ -913,6 +913,13 @@ a.twitter-link:hover{
     }
 }
 @media screen and (max-width: 480px) {
+    nav.navbar{
+        padding: 30px 15px;
+    }
+    .home-section .container {
+        margin: auto;
+        margin-left: 15px;
+    }
     .home-seventh-section>div{
         margin-left: 5px;
         margin-right: 5px;
