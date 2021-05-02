@@ -629,6 +629,7 @@ a.twitter-link:hover{
 .head-section .col-lg-6 img{
     margin-left: auto;
     margin-right: 35px; 
+    height: 80vh;
 }
 .head-content p{
     font-family: 'Poppins', sans-serif;
