@@ -56,4 +56,5 @@ function loader() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("loader-overlay").style.display = "none";
+  document.getElementsByTagName("body")[0].style.overflow = "auto";
 }
