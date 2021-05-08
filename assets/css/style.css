@@ -44,9 +44,45 @@
       visibility: hidden;
     }
   }
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 ::selection{
     background: rgba(255, 0, 0, 0.349);
     color: white;
+}
+#loader-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 999999;
+    animation-duration: 0.5s;
+}
+#loader {
+    position: absolute;
+    z-index: 1000000;
+}
+ 
+@-webkit-keyframes animatebottom {
+    from { bottom:-500px; opacity:1 } 
+    to { bottom:0px; opacity:0 }
+}
+  
+ @keyframes animatebottom { 
+    from{ bottom:-500px; opacity:1 } 
+    to{ bottom:0; opacity:0 }
 }
 html {
     scroll-behavior: smooth;
@@ -914,7 +950,8 @@ a.twitter-link:hover{
 }
 @media screen and (max-width: 480px) {
     nav.navbar{
-        padding: 30px 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .home-section .container {
         margin: auto;
