@@ -74,7 +74,9 @@
     position: absolute;
     z-index: 1000000;
 }
- 
+main{
+    visibility: hidden;
+}
 @-webkit-keyframes animatebottom {
     from { bottom:-500px; opacity:1 } 
     to { bottom:0px; opacity:0 }
