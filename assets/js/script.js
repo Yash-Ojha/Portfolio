@@ -45,17 +45,18 @@ jQuery('.owl-carousel').owlCarousel({
 });
 function fadeToZero()
 {
-    $("#loader-overlay").fadeOut(550);    
+    $("#loader-overlay").fadeOut(1500);    
 }
 var myVar;
+var myVar1;
 function loader() {
-  myVar = setTimeout(showPage, 2500);
-  myVar = setTimeout(fadeToZero, 1500);
+  myVar = setTimeout(showPage, 2000);
+  myVar1 = setTimeout(fadeToZero, 1500);
 }
-
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("loader-overlay").style.display = "none";
   document.getElementsByTagName("body")[0].style.overflow = "auto";
+  document.getElementsByTagName("body")[0].style.backgroundColor = "unset";
   document.getElementsByTagName("main")[0].style.visibility = "visible";
 }
