@@ -50,7 +50,7 @@ function fadeToZero()
 var myVar;
 var myVar1;
 function loader() {
-  myVar = setTimeout(showPage, 2000);
+  myVar = setTimeout(showPage, 2800);
   myVar1 = setTimeout(fadeToZero, 1500);
 }
 function showPage() {
